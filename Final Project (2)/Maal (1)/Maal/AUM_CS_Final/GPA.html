@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AUM CS - GPA Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page-wrapper">
+  <div class="bg-image"></div>
+  <div class="site-box">
+    <div class="header-top">
+      <div class="logo"><img src="images/aum_logo.png" alt="AUM logo"></div>
+      <div class="title">Computer Science Department</div>
+    </div>
+
+    <div class="nav-bar">
+      <div class="nav-inner">
+        <a href="home.html" class="nav-item">Home</a>
+        <a href="description.html" class="nav-item">Program Description</a>
+        <a href="TA.html" class="nav-item">TA Application</a>
+        <a href="GPA.html" class="nav-item active">GPA Calculator</a>
+      </div>
+    </div>
+
+    <div class="content-area">
+      <div class="gpa-panel">
+        <h2 class="gpa-title">Find your GPA!</h2>
+        <p class="small-instr">Enter the number of credit hours for each course, and the letter grade for each of them. At least 2 courses should be entered.</p>
+
+        <div class="gpa-row header">
+          <div class="col label"></div>
+          <div class="col">Credit Hours</div>
+          <div class="col" style="padding-left: 20px;">Grade</div>
+        </div>
+
+        <!-- Course rows -->
+        <div class="gpa-row">
+          <div class="col label">Course 1:</div>
+          <div class="col" ><input type="text" name="credit1"></div>
+          <div class="col"><input type="text" name="grade1" maxlength="1"></div>
+        </div>
+
+        <div class="gpa-row">
+          <div class="col label">Course 2:</div>
+          <div class="col"><input type="text" name="credit2"></div>
+          <div class="col"><input type="text" name="grade2" maxlength="1"></div>
+        </div>
+
+        <div class="gpa-row">
+          <div class="col label">Course 3:</div>
+          <div class="col"><input type="text" name="credit3"></div>
+          <div class="col"><input type="text" name="grade3" maxlength="1"></div>
+        </div>
+
+        <div class="gpa-row">
+          <div class="col label">Course 4:</div>
+          <div class="col"><input type="text" name="credit4"></div>
+          <div class="col"><input type="text" name="grade4" maxlength="1"></div>
+        </div>
+
+        <div class="gpa-row">
+          <div class="col label">Course 5:</div>
+          <div class="col"><input type="text" name="credit5"></div>
+          <div class="col"><input type="text" name="grade5" maxlength="1"></div>
+        </div>
+
+        <div class="gpa-row">
+          <div class="col label">Avg GPA:</div>
+          <div class="col"><input type="text" id="gpaOut" readonly></div>
+          <div class="col"></div>
+        </div>
+
+        <div class="btn-row">
+          <button type="button" id="calcBtn">Submit</button>
+          <button type="button" id="resetGpaBtn" style="margin-left: 60px;">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-strip">
+      <div class="footer-left">
+        7400 East Drive<br>
+        Montgomery, AL 36117<br>
+        Local: 334-244-3000<br>
+        Toll-Free: 800-227-2649
+      </div>
+      <div class="footer-center">© 2025 Keerthana Katanguri</div>
+      <div class="footer-right">
+        <img src="images/twitter.jpeg" alt="t" class="soc"> <img src="images/pinterest.png" alt="p" class="soc"> <img src="images/facebook.png" alt="f" class="soc">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="GPA.js"></script>
+</body>
+</html>
